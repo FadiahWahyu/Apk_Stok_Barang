@@ -19,4 +19,5 @@ Aplikasi desktop berbasis **Java Swing (NetBeans)** untuk mengelola data stok ba
 1. Import project ke NetBeans
 2. Import database MySQL
 3. Atur koneksi database
-4. Jalankan aplikasi
+4. Masukan file yg ada di file pendukung ke library netbeans 
+5. Jalankan aplikasi
