@@ -10,7 +10,7 @@ Aplikasi desktop berbasis **Java Swing (NetBeans)** untuk mengelola data stok ba
 - Laporan stok (JasperReport)
 
 ## 🛠️ Teknologi
-- Java (jdk 1,8) bawaan netbeans 8.2
+- Java (jdk 1.8) bawaan netbeans 8.2
 - NetBeans IDE (versi 8.2)
 - MySQL
 - JasperReport
