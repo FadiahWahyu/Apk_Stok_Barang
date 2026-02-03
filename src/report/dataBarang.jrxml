@@ -15,15 +15,15 @@
 	<field name="barang_keluar" class="java.lang.Integer"/>
 	<field name="total_stok" class="java.lang.Integer"/>
 	<title>
-		<band height="99">
+		<band height="109">
 			<image>
 				<reportElement x="26" y="-28" width="179" height="113" uuid="5d93d804-676e-4851-b79f-24ad9964e6c9"/>
 				<imageExpression><![CDATA["logo1.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="114" y="0" width="595" height="20" uuid="fbfdd5d1-3cbb-4c5a-b997-f3f12eca9dee"/>
+				<reportElement x="114" y="-3" width="595" height="30" uuid="fbfdd5d1-3cbb-4c5a-b997-f3f12eca9dee"/>
 				<textElement textAlignment="Center">
-					<font size="14" isBold="true"/>
+					<font size="20" isBold="true"/>
 				</textElement>
 				<text><![CDATA[TOKO DUNIA KOLEKSI IMANI]]></text>
 			</staticText>
@@ -32,23 +32,30 @@
 				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[Kel. Limus Nunggal, Kec. Cileungsi, RT 04 RW 01 16820]]></text>
+				<text><![CDATA[MEETLAND CILEUNGSI NO 8 PTM 2, RT 04 RW 01]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="112" y="38" width="595" height="18" uuid="ffe3ed16-365e-439e-8672-8f20f016d79c"/>
 				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[No. Telp : 085867555233 | email : zidanmaroo@gmail.com]]></text>
+				<text><![CDATA[KEL. LIMUS NUNGGAL, KEC. CILEUNGSI, BOGOR 16820]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="52" width="595" height="18" uuid="ffe3ed16-365e-439e-8672-8f20f016d79c"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[zidanmaroo@gmail.com]]></text>
 			</staticText>
 			<line>
-				<reportElement x="0" y="58" width="802" height="2" forecolor="#000000" uuid="cd9bf726-9050-4a86-89b9-29c1ad59dd20"/>
+				<reportElement x="0" y="69" width="802" height="2" forecolor="#000000" uuid="cd9bf726-9050-4a86-89b9-29c1ad59dd20"/>
 				<graphicElement>
 					<pen lineWidth="3.0" lineStyle="Double"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement x="117" y="68" width="595" height="22" uuid="7d3a494e-d5d3-425f-ac6d-2347f7b5fcd0"/>
+				<reportElement x="117" y="77" width="595" height="22" uuid="7d3a494e-d5d3-425f-ac6d-2347f7b5fcd0"/>
 				<textElement textAlignment="Center">
 					<font size="16" isBold="true"/>
 				</textElement>
@@ -214,12 +221,10 @@
 			<textField>
 				<reportElement x="530" y="13" width="200" height="15" uuid="0677ad5b-a8cb-4834-8320-93f9b380afbc"/>
 				<textElement textAlignment="Center"/>
-				<textFieldExpression><![CDATA[
-                                "Jakarta, " + new java.text.SimpleDateFormat(
+				<textFieldExpression><![CDATA["Bogor, " + new java.text.SimpleDateFormat(
                                         "EEEE dd MMMM yyyy",
                                         new java.util.Locale("id", "ID")
-                                ).format(new java.util.Date())
-                                ]]></textFieldExpression>
+                                ).format(new java.util.Date())]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="540" y="30" width="180" height="15" uuid="353a2a65-f94e-48cb-93b2-a3e3571c6606"/>

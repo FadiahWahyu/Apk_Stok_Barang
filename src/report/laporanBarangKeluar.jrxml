@@ -1,38 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
-              http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
-              name="laporan_barang_keluar"
-              language="groovy"
-              pageWidth="842"
-              pageHeight="595"
-              orientation="Landscape"
-              columnWidth="802"
-              leftMargin="20"
-              rightMargin="20"
-              topMargin="20"
-              bottomMargin="20">
-    <queryString>
-        <![CDATA[SELECT * FROM barang_keluar]]>
-    </queryString>
-    <field name="id" class="java.lang.Integer"/>
-    <field name="kode_barang" class="java.lang.Integer"/>
-    <field name="nama_barang" class="java.lang.String"/>
-    <field name="jumlah" class="java.lang.Integer"/>
-    <field name="harga" class="java.math.BigDecimal"/>
-    <field name="tanggal_keluar" class="java.sql.Date"/>
-    <field name="total_harga" class="java.math.BigDecimal"/>
-    <title>
-		<band height="99">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporan_barang_keluar" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ef5240bd-f1ff-499f-9fd0-077160ffb298">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM barang_keluar]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="kode_barang" class="java.lang.Integer"/>
+	<field name="nama_barang" class="java.lang.String"/>
+	<field name="jumlah" class="java.lang.Integer"/>
+	<field name="harga" class="java.math.BigDecimal"/>
+	<field name="tanggal_keluar" class="java.sql.Date"/>
+	<field name="total_harga" class="java.math.BigDecimal"/>
+	<title>
+		<band height="109">
 			<image>
 				<reportElement x="26" y="-28" width="179" height="113" uuid="5d93d804-676e-4851-b79f-24ad9964e6c9"/>
 				<imageExpression><![CDATA["logo1.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="114" y="0" width="595" height="20" uuid="fbfdd5d1-3cbb-4c5a-b997-f3f12eca9dee"/>
+				<reportElement x="112" y="-3" width="595" height="31" uuid="fbfdd5d1-3cbb-4c5a-b997-f3f12eca9dee"/>
 				<textElement textAlignment="Center">
-					<font size="14" isBold="true"/>
+					<font size="20" isBold="true"/>
 				</textElement>
 				<text><![CDATA[TOKO DUNIA KOLEKSI IMANI]]></text>
 			</staticText>
@@ -41,23 +31,30 @@
 				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[Kel. Limus Nunggal, Kec. Cileungsi, RT 04 RW 01 16820]]></text>
+				<text><![CDATA[MEETLAND CILEUNGSI NO 8 PTM 2, RT 04 RW 01]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="112" y="38" width="595" height="18" uuid="ffe3ed16-365e-439e-8672-8f20f016d79c"/>
 				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[No. Telp : 085867555233 | email : zidanmaroo@gmail.com]]></text>
+				<text><![CDATA[KEL. LIMUS NUNGGAL, KEC. CILEUNGSI, BOGOR 16820]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="53" width="595" height="18" uuid="ffe3ed16-365e-439e-8672-8f20f016d79c"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[zidanmaroo@gmail.com]]></text>
 			</staticText>
 			<line>
-				<reportElement x="0" y="58" width="802" height="2" forecolor="#000000" uuid="cd9bf726-9050-4a86-89b9-29c1ad59dd20"/>
+				<reportElement x="0" y="70" width="802" height="2" forecolor="#000000" uuid="cd9bf726-9050-4a86-89b9-29c1ad59dd20"/>
 				<graphicElement>
 					<pen lineWidth="3.0" lineStyle="Double"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement x="117" y="68" width="595" height="22" uuid="7d3a494e-d5d3-425f-ac6d-2347f7b5fcd0"/>
+				<reportElement x="117" y="76" width="595" height="22" uuid="7d3a494e-d5d3-425f-ac6d-2347f7b5fcd0"/>
 				<textElement textAlignment="Center">
 					<font size="16" isBold="true"/>
 				</textElement>
@@ -65,130 +62,150 @@
 			</staticText>
 		</band>
 	</title>
-    <columnHeader>
-        <band height="18">
-            <staticText>
-                <reportElement x="0" y="0" width="113" height="18" backcolor="#E0E0E0" mode="Opaque"/>
-                <box><pen lineWidth="0.7"/></box>
-                <textElement textAlignment="Center" verticalAlignment="Middle">
-                    <font isBold="true"/>
-                </textElement>
-                <text><![CDATA[ID]]></text>
-            </staticText>
-            <staticText>
-                <reportElement x="113" y="0" width="113" height="18" backcolor="#E0E0E0" mode="Opaque"/>
-                <box><pen lineWidth="0.7"/></box>
-                <textElement textAlignment="Center" verticalAlignment="Middle">
-                    <font isBold="true"/>
-                </textElement>
-                <text><![CDATA[Kode Barang]]></text>
-            </staticText>
-            <staticText>
-                <reportElement x="226" y="0" width="113" height="18" backcolor="#E0E0E0" mode="Opaque"/>
-                <box><pen lineWidth="0.7"/></box>
-                <textElement textAlignment="Center" verticalAlignment="Middle">
-                    <font isBold="true"/>
-                </textElement>
-                <text><![CDATA[Nama Barang]]></text>
-            </staticText>
-            <staticText>
-                <reportElement x="339" y="0" width="113" height="18" backcolor="#E0E0E0" mode="Opaque"/>
-                <box><pen lineWidth="0.7"/></box>
-                <textElement textAlignment="Center" verticalAlignment="Middle">
-                    <font isBold="true"/>
-                </textElement>
-                <text><![CDATA[Jumlah]]></text>
-            </staticText>
-            <staticText>
-                <reportElement x="452" y="0" width="113" height="18" backcolor="#E0E0E0" mode="Opaque"/>
-                <box><pen lineWidth="0.7"/></box>
-                <textElement textAlignment="Center" verticalAlignment="Middle">
-                    <font isBold="true"/>
-                </textElement>
-                <text><![CDATA[Harga]]></text>
-            </staticText>
-            <staticText>
-                <reportElement x="565" y="0" width="113" height="18" backcolor="#E0E0E0" mode="Opaque"/>
-                <box><pen lineWidth="0.7"/></box>
-                <textElement textAlignment="Center" verticalAlignment="Middle">
-                    <font isBold="true"/>
-                </textElement>
-                <text><![CDATA[Tanggal Keluar]]></text>
-            </staticText>
-            <staticText>
-                <reportElement x="678" y="0" width="124" height="18" backcolor="#E0E0E0" mode="Opaque"/>
-                <box><pen lineWidth="0.7"/></box>
-                <textElement textAlignment="Center" verticalAlignment="Middle">
-                    <font isBold="true"/>
-                </textElement>
-                <text><![CDATA[Total Harga]]></text>
-            </staticText>
-        </band>
-    </columnHeader>
-                    <detail>
-                    <band height="18">
-                        <textField>
-                            <reportElement x="0" y="0" width="113" height="18"/>
-                            <box><pen lineWidth="0.5"/></box>
-                            <textElement textAlignment="Center" verticalAlignment="Middle"/>
-                            <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
-                        </textField>
-                        <textField>
-                            <reportElement x="113" y="0" width="113" height="18"/>
-                            <box><pen lineWidth="0.5"/></box>
-                            <textElement textAlignment="Center" verticalAlignment="Middle"/>
-                            <textFieldExpression><![CDATA[$F{kode_barang}]]></textFieldExpression>
-                        </textField>
-                        <textField>
-                            <reportElement x="226" y="0" width="113" height="18"/>
-                            <box><pen lineWidth="0.5"/></box>
-                            <textElement textAlignment="Center" verticalAlignment="Middle"/>
-                            <textFieldExpression><![CDATA[$F{nama_barang}]]></textFieldExpression>
-                        </textField>
-                        <textField>
-                            <reportElement x="339" y="0" width="113" height="18"/>
-                            <box><pen lineWidth="0.5"/></box>
-                            <textElement textAlignment="Center" verticalAlignment="Middle"/>
-                            <textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
-                        </textField>
-                        <textField>
-                            <reportElement x="452" y="0" width="113" height="18"/>
-                            <box><pen lineWidth="0.5"/></box>
-                            <textElement textAlignment="Center" verticalAlignment="Middle"/>
-                            <textFieldExpression><![CDATA[
-                                "Rp " + new java.text.DecimalFormat("#,##0").format($F{harga})
-                            ]]></textFieldExpression>
-                        </textField>
-                        <textField>
-                            <reportElement x="565" y="0" width="113" height="18"/>
-                            <box><pen lineWidth="0.5"/></box>
-                            <textElement textAlignment="Center" verticalAlignment="Middle"/>
-                            <textFieldExpression><![CDATA[
-                                new java.text.SimpleDateFormat("dd-MM-yyyy")
-                                    .format($F{tanggal_keluar})
-                            ]]></textFieldExpression>
-                        </textField>
-                        <textField>
-                            <reportElement x="678" y="0" width="124" height="18"/>
-                            <box><pen lineWidth="0.5"/></box>
-                            <textElement textAlignment="Center" verticalAlignment="Middle"/>
-                            <textFieldExpression><![CDATA[
-                                "Rp " + new java.text.DecimalFormat("#,##0").format($F{total_harga})
-                            ]]></textFieldExpression>
-                        </textField>
-                    </band>
-                </detail>
-                <lastPageFooter>
+	<columnHeader>
+		<band height="18">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="113" height="18" backcolor="#E0E0E0" uuid="b621051b-f42d-4162-837e-b71e47dafadc"/>
+				<box>
+					<pen lineWidth="0.7"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="113" y="0" width="113" height="18" backcolor="#E0E0E0" uuid="7faed8f7-04b2-40ea-b6c4-76160910db24"/>
+				<box>
+					<pen lineWidth="0.7"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="226" y="0" width="113" height="18" backcolor="#E0E0E0" uuid="d5e0fc3f-24ee-48c4-82e2-c5919d360bad"/>
+				<box>
+					<pen lineWidth="0.7"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="339" y="0" width="113" height="18" backcolor="#E0E0E0" uuid="6816601a-2d20-4287-88f4-e044a90adac4"/>
+				<box>
+					<pen lineWidth="0.7"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="452" y="0" width="113" height="18" backcolor="#E0E0E0" uuid="9ab45940-9085-4ed7-bac3-3fff29a62a6e"/>
+				<box>
+					<pen lineWidth="0.7"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="565" y="0" width="113" height="18" backcolor="#E0E0E0" uuid="75064a5b-870e-4154-a641-85d7fad78ead"/>
+				<box>
+					<pen lineWidth="0.7"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Keluar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="678" y="0" width="124" height="18" backcolor="#E0E0E0" uuid="69ef2dbb-10a3-445e-8892-2eda9f364600"/>
+				<box>
+					<pen lineWidth="0.7"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18">
+			<textField>
+				<reportElement x="0" y="0" width="113" height="18" uuid="16b7e02c-458e-4308-b2ea-42cea898c52a"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="113" y="0" width="113" height="18" uuid="a714f638-017c-4a3f-b048-78276e79df62"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kode_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="0" width="113" height="18" uuid="30d3bada-f834-4900-b71f-84e5860cdcfa"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="339" y="0" width="113" height="18" uuid="6a77c2df-1f33-4427-adf3-f8f87874c938"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="452" y="0" width="113" height="18" uuid="a59c9575-e077-4941-af07-a12bc368f29c"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Rp " + new java.text.DecimalFormat("#,##0").format($F{harga})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="565" y="0" width="113" height="18" uuid="e537fc40-c508-4c89-b835-47dc5136653d"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("dd-MM-yyyy")
+                                    .format($F{tanggal_keluar})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="678" y="0" width="124" height="18" uuid="e4861fdb-be38-4294-a796-e0f290a113d1"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Rp " + new java.text.DecimalFormat("#,##0").format($F{total_harga})]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
 		<band height="120">
 			<textField>
 				<reportElement x="530" y="13" width="200" height="15" uuid="0677ad5b-a8cb-4834-8320-93f9b380afbc"/>
 				<textElement textAlignment="Center"/>
-				<textFieldExpression><![CDATA[
-                                "Jakarta, " + new java.text.SimpleDateFormat(
+				<textFieldExpression><![CDATA["Bogor, " + new java.text.SimpleDateFormat(
                                         "EEEE dd MMMM yyyy",
                                         new java.util.Locale("id", "ID")
-                                ).format(new java.util.Date())
-                                ]]></textFieldExpression>
+                                ).format(new java.util.Date())]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="540" y="30" width="180" height="15" uuid="353a2a65-f94e-48cb-93b2-a3e3571c6606"/>
